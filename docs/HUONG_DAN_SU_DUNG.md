@@ -71,7 +71,7 @@ Mở bằng nút ⚙️ trên panel, `⌘,`, hoặc menu VClip → **Cài đặt
 **Lưu trữ**
 - Giữ text, link, file: 1 giờ → mãi mãi (mặc định 30 ngày).
 - Giữ ảnh: riêng, mặc định 7 ngày, hoặc "Giống text".
-- Số mục tối đa (mặc định 500), dung lượng tối đa (mặc định 500 MB), bỏ qua ảnh lớn hơn (mặc định 20 MB).
+- Số mục tối đa (mặc định 50), dung lượng tối đa (mặc định 500 MB), bỏ qua ảnh lớn hơn (mặc định 20 MB).
 - **Nén ảnh (HEIC):** ảnh nhỏ hơn 5–10 lần, đổi lại bị nén nhẹ. Ảnh nền trong suốt vẫn giữ PNG.
 - Xem dung lượng đang dùng, **Xoá ảnh…**, **Mở thư mục dữ liệu**.
 
