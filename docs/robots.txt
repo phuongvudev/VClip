@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://phuongvudev.github.io/VClip/sitemap.xml

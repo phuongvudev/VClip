@@ -1,0 +1,23 @@
+# VClip
+
+> VClip là trình quản lý clipboard (bộ nhớ tạm) miễn phí cho macOS (macOS 14+, Apple Silicon và Intel), giống Win + V trên Windows. Nhấn ⌘⇧V để mở lại mọi thứ đã copy (text, link, ảnh, file) trong một panel lưới thẻ hiện ngay dưới con trỏ nhập liệu, chọn một thẻ là dán vào app đang dùng. Có ghim, tìm kiếm, xem ảnh lớn, dán plain text, dán nhanh ⌘1–⌘9. Nhẹ máy (nghe phím ⌘C thay vì dò clipboard liên tục), ảnh copy từ Finder chỉ lưu đường dẫn, tự dọn theo thời gian lưu và giới hạn dung lượng. Không lưu mật khẩu, dữ liệu chỉ trên máy. VClip is a free clipboard history manager for macOS.
+
+Cài đặt: tải `VClip-<version>.pkg` từ GitHub Releases, bấm đúp → Continue → Install, cấp quyền Accessibility khi được hỏi, rồi nhấn ⌘⇧V. Gỡ: menu VClip → "Gỡ cài đặt VClip…".
+
+## Tài liệu
+
+- [Trang chủ](https://phuongvudev.github.io/VClip/): giới thiệu, thử ngay trên trang, phím tắt, cài đặt, hỏi đáp
+- [Hướng dẫn sử dụng](https://phuongvudev.github.io/VClip/HUONG_DAN_SU_DUNG.html): phím tắt, ghim, tìm kiếm, ảnh, cài đặt từng tab, quyền, dung lượng, gỡ cài đặt, xử lý sự cố
+- [README](https://github.com/phuongvudev/VClip#readme): giới thiệu và cài đặt
+
+## Tải về
+
+- [Bản mới nhất (GitHub Releases)](https://github.com/phuongvudev/VClip/releases/latest)
+
+## Phát hành
+
+- [Repository](https://github.com/phuongvudev/VClip): trang chủ, bản phát hành .pkg đã notarize, góp ý qua Issues. App viết bằng Swift/SwiftUI + SwiftData
+
+## Dự án liên quan
+
+- [VietIME](https://phuongvudev.github.io/VietIME/): bộ gõ tiếng Việt cho macOS, cùng tác giả
