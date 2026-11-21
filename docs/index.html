@@ -41,24 +41,6 @@
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
 }
 </script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    { "@type": "Question", "name": "VClip có miễn phí không?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Có. VClip hoàn toàn miễn phí, không quảng cáo, không cần tài khoản." } },
-    { "@type": "Question", "name": "VClip có lưu mật khẩu tôi copy không?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Không. VClip bỏ qua nội dung được đánh dấu là mật khẩu và mọi thứ copy từ trình quản lý mật khẩu như 1Password, Bitwarden, Passwords. Bạn có thể thêm app khác vào danh sách bỏ qua." } },
-    { "@type": "Question", "name": "Vì sao VClip cần quyền Accessibility?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Để tự dán vào app đang dùng sau khi bạn chọn một mục, và để biết vị trí con trỏ nhập liệu nhằm hiện panel ngay bên dưới. Không cấp quyền thì VClip vẫn lưu lịch sử, bạn tự nhấn ⌘V để dán." } },
-    { "@type": "Question", "name": "macOS 26 đã có clipboard trong Spotlight, VClip khác gì?",
-      "acceptedAnswer": { "@type": "Answer", "text": "VClip hiện ngay dưới chỗ đang gõ, dán bằng một cú click hoặc ⌘1 đến ⌘9, ghim mục hay dùng, xem trước ảnh, lưu lâu tuỳ chọn và chạy được từ macOS 14." } },
-    { "@type": "Question", "name": "Lịch sử clipboard được lưu ở đâu, bao lâu?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Chỉ trên máy bạn, trong thư mục Application Support/VClip. Mặc định text giữ 30 ngày, ảnh 7 ngày, tối đa 500 MB; mục đã ghim giữ mãi. Tất cả chỉnh được trong Cài đặt." } }
-  ]
-}
-</script>
 
 <style>
 /* VOICE everyday tool for Mac users and developers: friendly, exact, Vietnamese first
@@ -179,9 +161,6 @@ h2{font-weight:800;font-size:clamp(28px,3.6vw,42px);line-height:1.08;letter-spac
 .pkg{background:var(--bg);color:var(--ink);border-radius:14px;padding:22px;display:grid;grid-template-columns:auto minmax(0,1fr);gap:16px;align-items:center}
 .pkg img{width:84px;height:84px}
 .pkg h3{margin:0;font-size:20px}.pkg p{margin:4px 0 12px;color:var(--soft);font-size:15px}
-details{border-bottom:1px solid var(--rule);padding:14px 0}
-summary{cursor:pointer;font-weight:700;font-size:18px;list-style-position:outside}
-details p{margin:10px 0 0;color:var(--soft);max-width:48em}
 footer{margin:64px 0 0;padding:28px 0 40px;border-top:1px solid var(--rule);display:flex;flex-wrap:wrap;gap:10px 24px;justify-content:space-between;font-size:14px;color:var(--soft)}
 footer nav{display:flex;gap:18px;flex-wrap:wrap}
 @media(max-width:900px){.hero{grid-template-columns:1fr}.feats{grid-template-columns:repeat(2,minmax(0,1fr))}.light,.install{grid-template-columns:1fr}}
@@ -319,16 +298,6 @@ footer nav{display:flex;gap:18px;flex-wrap:wrap}
     </div>
   </section>
 
-  <section aria-labelledby="h-faq">
-    <h2 id="h-faq">Hỏi đáp</h2>
-    <details open><summary>VClip có lưu mật khẩu tôi copy không?</summary><p>Không. VClip bỏ qua nội dung được đánh dấu là mật khẩu và mọi thứ copy từ trình quản lý mật khẩu như 1Password, Bitwarden, Passwords. Bạn có thể thêm app khác vào danh sách bỏ qua trong <b>Cài đặt → Chung</b>.</p></details>
-    <details><summary>Vì sao VClip cần quyền Accessibility?</summary><p>Để tự dán vào app đang dùng sau khi bạn chọn một mục, và để biết con trỏ nhập liệu đang ở đâu nhằm hiện panel ngay bên dưới. Không cấp quyền thì VClip vẫn lưu lịch sử, bạn chọn mục rồi tự nhấn <kbd>⌘V</kbd>.</p></details>
-    <details><summary>macOS 26 đã có clipboard trong Spotlight, VClip khác gì?</summary><p>Spotlight phải mở rồi chuyển sang tab clipboard. VClip hiện ngay dưới chỗ đang gõ, dán bằng một cú click hoặc <kbd>⌘1</kbd>–<kbd>⌘9</kbd>, ghim mục hay dùng, xem trước ảnh, giữ lâu tuỳ chọn, và chạy được từ macOS 14.</p></details>
-    <details><summary>Lịch sử được lưu ở đâu, bao lâu?</summary><p>Chỉ trên máy bạn, trong <code>~/Library/Application Support/VClip</code>. Mặc định text giữ 30 ngày, ảnh 7 ngày, tối đa 500 MB; mục đã ghim giữ mãi. Tất cả chỉnh được trong <b>Cài đặt → Lưu trữ</b>.</p></details>
-    <details><summary>Có lên Mac App Store không?</summary><p>Không. App Store bắt app chạy trong sandbox, mà sandbox không cho tự dán vào app khác. VClip phát hành dạng .pkg đã được Apple notarize, mở bình thường như app tải từ App Store.</p></details>
-    <details><summary>Gỡ VClip thế nào?</summary><p>Bấm biểu tượng VClip trên thanh menu, chọn <b>Gỡ cài đặt VClip…</b>. Chọn <b>Gỡ cài đặt</b> để giữ lịch sử, hoặc <b>Gỡ sạch</b> để xoá luôn lịch sử và cài đặt.</p></details>
-    <details><summary>VClip có miễn phí không?</summary><p>Có. VClip hoàn toàn miễn phí, không quảng cáo, không cần tài khoản.</p></details>
-  </section>
 
   <footer>
     <span>© 2026 Vũ Phương</span>
