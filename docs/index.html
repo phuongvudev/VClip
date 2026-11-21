@@ -73,7 +73,7 @@
   --sans:"Be Vietnam Pro",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;--mono:"JetBrains Mono",ui-monospace,"SF Mono",Menlo,monospace}
 :root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
 *{box-sizing:border-box;min-width:0}
-html{scroll-behavior:smooth;scroll-padding-top:24px}
+html{scroll-behavior:smooth;scroll-padding-top:24px;-webkit-text-size-adjust:100%;text-size-adjust:100%}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
 body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 var(--sans);overflow-x:clip}
 a{color:inherit}
@@ -87,7 +87,7 @@ header nav a{text-decoration:none;color:var(--soft)}
 header nav a:hover{color:var(--ink);text-decoration:underline;text-underline-offset:4px}
 .dl{background:var(--ink);color:var(--bg)!important;padding:9px 16px;border-radius:8px;font-weight:700}
 .dl:hover{text-decoration:none!important;filter:brightness(1.15)}
-.hero{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:24px 48px;align-items:end;padding:28px 0 8px}
+.hero{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:24px 56px;align-items:end;padding:36px 0 8px}
 .hero h1{font-weight:800;font-size:clamp(36px,5.4vw,64px);line-height:1.04;letter-spacing:-.035em;margin:0;text-wrap:balance}
 .hero h1 span{display:block;font-weight:500;color:var(--soft);letter-spacing:-.03em}
 .lead{font-size:19px;line-height:1.55;margin:0 0 20px}
@@ -100,13 +100,13 @@ header nav a:hover{color:var(--ink);text-decoration:underline;text-underline-off
 kbd{font:600 .82em var(--mono);padding:2px 7px;border:1.5px solid var(--rule);border-bottom-width:3px;border-radius:6px;background:var(--card);white-space:nowrap}
 /* ---------- Demo window ---------- */
 .demo{margin:36px 0 10px;position:relative}
-.demo::before{content:"";position:absolute;inset:40px -2% -24px;border-radius:28px;background:linear-gradient(135deg,var(--blue),var(--violet));opacity:.16;z-index:-1}
+.demo::before{content:"";position:absolute;inset:48px 0 -20px;border-radius:24px;background:linear-gradient(135deg,var(--blue),var(--violet));opacity:.16;z-index:-1}
 .window{position:relative;background:var(--win);border-radius:14px;border:1px solid var(--rule);box-shadow:0 30px 60px -30px rgba(30,42,120,.5);overflow:hidden}
 .bar{display:flex;align-items:center;gap:8px;padding:11px 16px;background:var(--winbar);font-size:13px;color:var(--soft)}
 .dots{display:flex;gap:7px;margin-right:10px}.dots i{width:12px;height:12px;border-radius:50%;display:block}
 .dots i:nth-child(1){background:#FF5F57}.dots i:nth-child(2){background:#FEBC2E}.dots i:nth-child(3){background:#28C840}
 .bar b{color:var(--ink);font-weight:600}
-.doc{min-height:400px;padding:22px clamp(18px,4vw,40px) 140px;outline:none;font-size:16px;line-height:1.8;color:var(--ink);caret-color:var(--violet);background:var(--card)}
+.doc{min-height:460px;padding:22px clamp(18px,4vw,40px) 40px;outline:none;font-size:16px;line-height:1.8;color:var(--ink);caret-color:var(--violet);background:var(--card)}
 .doc h3{font-size:20px;margin:0 0 6px}
 .doc code,.doc .chip{font:14px var(--mono);background:var(--win);border:1px solid var(--rule);border-radius:5px;padding:1px 5px}
 .doc .chip{display:inline-flex;align-items:center;gap:6px;vertical-align:-3px}
@@ -124,7 +124,7 @@ kbd{font:600 .82em var(--mono);padding:2px 7px;border:1.5px solid var(--rule);bo
 .ib:hover{background:color-mix(in srgb,var(--ink) 8%,transparent);color:var(--ink)}
 .ib.on{color:var(--violet)}
 .ib svg{width:17px;height:17px}
-.vg{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;max-height:300px;overflow-y:auto;padding:2px}
+.vg{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;max-height:216px;overflow-y:auto;padding:2px;scrollbar-width:thin}
 .cd{position:relative;height:100px;border-radius:12px;background:var(--card);border:1px solid color-mix(in srgb,var(--ink) 10%,transparent);overflow:hidden;cursor:pointer;display:flex;flex-direction:column;text-align:left;padding:0;color:var(--ink);font:inherit}
 .cd:hover{border-color:color-mix(in srgb,var(--violet) 45%,transparent)}
 .cd.sel{border:2px solid var(--violet);background:color-mix(in srgb,var(--violet) 8%,var(--card))}
@@ -176,7 +176,7 @@ details p{margin:10px 0 0;color:var(--soft);max-width:48em}
 footer{margin:64px 0 0;padding:28px 0 40px;border-top:1px solid var(--rule);display:flex;flex-wrap:wrap;gap:10px 24px;justify-content:space-between;font-size:14px;color:var(--soft)}
 footer nav{display:flex;gap:18px;flex-wrap:wrap}
 @media(max-width:900px){.hero{grid-template-columns:1fr}.feats{grid-template-columns:repeat(2,minmax(0,1fr))}.light,.install{grid-template-columns:1fr}}
-@media(max-width:600px){header nav a:not(.dl){display:none}.feats,.keys{grid-template-columns:1fr}.vg{grid-template-columns:repeat(2,minmax(0,1fr))}.doc{min-height:440px}.pkg{grid-template-columns:1fr}}
+@media(max-width:600px){header nav a:not(.dl){display:none}.feats,.keys{grid-template-columns:1fr}.vg{grid-template-columns:repeat(2,minmax(0,1fr))}.doc{min-height:500px}.pkg{grid-template-columns:1fr}.status span:nth-child(n+2){display:none}.feats{gap:22px}.feat{display:grid;grid-template-columns:52px minmax(0,1fr);gap:0 14px}.feat svg{grid-row:span 2}.feat h3{margin-top:0}}
 </style>
 </head>
 <body>
