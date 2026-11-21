@@ -28,6 +28,7 @@
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
   "name": "VClip",
+  "screenshot": "https://phuongvudev.github.io/VClip/images/panel-light.webp",
   "alternateName": "Bộ nhớ tạm VClip",
   "description": "Trình quản lý clipboard cho macOS: nhấn ⌥⌘V để mở lịch sử copy ngay dưới con trỏ, dán bằng một cú click, ghim, tìm kiếm, xem ảnh. Nhẹ máy, không lưu mật khẩu.",
   "applicationCategory": "UtilitiesApplication",
@@ -147,6 +148,14 @@ kbd{font:600 .82em var(--mono);padding:2px 7px;border:1.5px solid var(--rule);bo
 .tries span{font-size:15px;color:var(--soft)}
 #toast{font-size:15px;color:var(--soft);min-height:24px;margin-top:6px}
 /* ---------- Sections ---------- */
+.shots{margin-top:26px}
+.shot-hero{margin:0;padding:clamp(18px,4vw,44px);border-radius:28px;background:linear-gradient(135deg,light-dark(#DDE6FF,#1F2660),light-dark(#EDE4FF,#2C2160));display:grid;place-items:center}
+.shot-hero img{width:min(100%,640px);height:auto;border-radius:22px;filter:drop-shadow(0 18px 36px rgba(30,42,120,.22)) drop-shadow(0 2px 6px rgba(30,42,120,.12))}
+.shot-row{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(10px,2vw,22px);margin-top:clamp(16px,3vw,28px)}
+.shot-row figure{margin:0;text-align:center}
+.shot-row img{width:100%;height:auto;display:block}
+.shots figcaption{font-size:14px;color:var(--soft);margin-top:8px}
+@media (max-width:720px){.shot-row{grid-template-columns:1fr 1fr}.shot-row figure:last-child{display:none}}
 section{padding:clamp(44px,6vw,80px) 0 0}
 h2{font-weight:800;font-size:clamp(28px,3.6vw,42px);line-height:1.08;letter-spacing:-.025em;margin:0 0 10px;text-wrap:balance}
 .intro{font-size:18px;color:var(--soft);margin:0 0 28px;max-width:44em}
@@ -239,6 +248,22 @@ footer nav{display:flex;gap:18px;flex-wrap:wrap}
     <h2 id="h-feat">Copy cả ngày, dán lại trong một giây</h2>
     <p class="intro">macOS chỉ nhớ đúng một thứ bạn copy cuối cùng. VClip nhớ hết, và đưa chúng ra đúng lúc, đúng chỗ.</p>
     <div class="feats" id="feats"></div>
+  </section>
+
+  <section id="anh-that" aria-labelledby="h-shots">
+    <h2 id="h-shots">Trông như thế này trên máy bạn</h2>
+    <p class="intro">Ảnh chụp thật từ VClip trên macOS, không phải bản vẽ minh hoạ.</p>
+    <div class="shots">
+      <figure class="shot-hero">
+        <img src="images/panel-light.webp" width="978" height="370" loading="lazy" decoding="async" alt="Bảng bộ nhớ tạm VClip hiện ngay trên ô nhập liệu, với hai thẻ ảnh đã copy, nút xem, ghim, xoá và phím tắt ⌘1, ⌘2">
+        <figcaption>Nhấn ⌥⌘V: bảng hiện ngay chỗ bạn đang gõ, rê chuột để xem, ghim hoặc xoá.</figcaption>
+      </figure>
+      <div class="shot-row">
+        <figure><img src="images/settings-general.webp" width="1264" height="1520" loading="lazy" decoding="async" alt="Cài đặt VClip, tab Chung: phím tắt ⌥⌘V, mở cùng macOS, tự động dán, chọn loại nội dung ghi lại"><figcaption>Chung: phím tắt, tự dán, loại nội dung</figcaption></figure>
+        <figure><img src="images/settings-appearance.webp" width="1264" height="1520" loading="lazy" decoding="async" alt="Cài đặt VClip, tab Giao diện: nền Liquid Glass, vị trí dưới con trỏ, số cột"><figcaption>Giao diện: Liquid Glass, vị trí, số cột</figcaption></figure>
+        <figure><img src="images/settings-permissions.webp" width="1264" height="1520" loading="lazy" decoding="async" alt="Cài đặt VClip: danh sách app không ghi lại, quyền Accessibility, phiên bản và nút gỡ cài đặt"><figcaption>Bỏ qua app, quyền và gỡ cài đặt</figcaption></figure>
+      </div>
+    </div>
   </section>
 
   <section aria-labelledby="h-keys">
