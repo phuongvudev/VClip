@@ -1,6 +1,6 @@
 # GitHub Pages (Jekyll): docs/index.html là trang chủ, các file .md được tự chuyển thành .html
 title: VClip
-description: Bộ nhớ tạm (clipboard history) cho macOS — nhấn ⌘⇧V để mở lại mọi thứ đã copy, ngay dưới con trỏ.
+description: Bộ nhớ tạm (clipboard history) cho macOS — nhấn ⌥⌘V để mở lại mọi thứ đã copy, ngay dưới con trỏ.
 lang: vi
 theme: jekyll-theme-primer
 exclude:

@@ -1,8 +1,8 @@
 # VClip
 
-> VClip là trình quản lý clipboard (bộ nhớ tạm) miễn phí cho macOS (macOS 14+, Apple Silicon và Intel), giống Win + V trên Windows. Nhấn ⌘⇧V để mở lại mọi thứ đã copy (text, link, ảnh, file) trong một panel lưới thẻ hiện ngay dưới con trỏ nhập liệu, chọn một thẻ là dán vào app đang dùng. Có ghim, tìm kiếm, xem ảnh lớn, dán plain text, dán nhanh ⌘1–⌘9. Nhẹ máy (nghe phím ⌘C thay vì dò clipboard liên tục), ảnh copy từ Finder chỉ lưu đường dẫn, tự dọn theo thời gian lưu và giới hạn dung lượng. Không lưu mật khẩu, dữ liệu chỉ trên máy. VClip is a free clipboard history manager for macOS.
+> VClip là trình quản lý clipboard (bộ nhớ tạm) miễn phí cho macOS (macOS 14+, Apple Silicon và Intel), giống Win + V trên Windows. Nhấn ⌥⌘V để mở lại mọi thứ đã copy (text, link, ảnh, file) trong một panel lưới thẻ hiện ngay dưới con trỏ nhập liệu, chọn một thẻ là dán vào app đang dùng. Có ghim, tìm kiếm, xem ảnh lớn, dán plain text, dán nhanh ⌘1–⌘9. Nhẹ máy (nghe phím ⌘C thay vì dò clipboard liên tục), ảnh copy từ Finder chỉ lưu đường dẫn, tự dọn theo thời gian lưu và giới hạn dung lượng. Không lưu mật khẩu, dữ liệu chỉ trên máy. VClip is a free clipboard history manager for macOS.
 
-Cài đặt: tải `VClip-<version>.pkg` từ GitHub Releases, bấm đúp → Continue → Install, cấp quyền Accessibility khi được hỏi, rồi nhấn ⌘⇧V. Gỡ: menu VClip → "Gỡ cài đặt VClip…".
+Cài đặt: tải `VClip-<version>.pkg` từ GitHub Releases, bấm đúp → Continue → Install, cấp quyền Accessibility khi được hỏi, rồi nhấn ⌥⌘V. Gỡ: menu VClip → "Gỡ cài đặt VClip…".
 
 ## Tài liệu
 

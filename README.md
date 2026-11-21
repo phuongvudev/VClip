@@ -1,10 +1,10 @@
 # VClip
 
-Bộ nhớ tạm (clipboard history) cho macOS, giống **Win + V** trên Windows: nhấn **⌘⇧V** để mở lại mọi thứ bạn đã copy và dán ngay.
+Bộ nhớ tạm (clipboard history) cho macOS, giống **Win + V** trên Windows: nhấn **⌥⌘V** để mở lại mọi thứ bạn đã copy và dán ngay.
 
 🌐 **Trang chủ:** https://phuongvudev.github.io/VClip/ · ⬇ **Tải về:** [bản mới nhất](https://github.com/phuongvudev/VClip/releases/latest)
 
-*VClip is a free clipboard history manager for macOS. Press ⌘⇧V to bring back anything you copied (text, links, images, files) right under your text cursor, and paste it with one click.*
+*VClip is a free clipboard history manager for macOS. Press ⌥⌘V to bring back anything you copied (text, links, images, files) right under your text cursor, and paste it with one click.*
 
 ## Tính năng
 
@@ -28,7 +28,7 @@ Yêu cầu macOS 14 trở lên, chạy được trên cả Apple Silicon lẫn I
 
 | Phím | Tác dụng |
 |---|---|
-| `⌘⇧V` | Mở / đóng bộ nhớ tạm (đổi được trong Cài đặt) |
+| `⌥⌘V` | Mở / đóng bộ nhớ tạm (đổi được trong Cài đặt) |
 | Click, `↩` | Dán mục đang chọn |
 | `⌥↩` | Dán dạng plain text |
 | `⌘1` … `⌘9` | Dán nhanh mục thứ 1–9 |

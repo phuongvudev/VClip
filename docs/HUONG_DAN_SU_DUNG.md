@@ -7,7 +7,7 @@ description: Phím tắt, ghim, tìm kiếm, ảnh, cài đặt, quyền, dung l
 
 [← Trang chủ](./) · [Tải về](https://github.com/phuongvudev/VClip/releases/latest)
 
-VClip nhớ mọi thứ bạn copy trên Mac (text, link, ảnh, file). Nhấn **⌘⇧V** ở bất kỳ app nào để mở lại và dán.
+VClip nhớ mọi thứ bạn copy trên Mac (text, link, ảnh, file). Nhấn **⌥⌘V** ở bất kỳ app nào để mở lại và dán.
 
 ## Mục lục
 
@@ -25,13 +25,13 @@ VClip nhớ mọi thứ bạn copy trên Mac (text, link, ảnh, file). Nhấn *
 1. Cài file `VClip-<phiên bản>.pkg`. VClip tự mở, biểu tượng nằm trên thanh menu.
 2. Cấp quyền **Accessibility** khi được hỏi (xem [Quyền cần cấp](#quyền-cần-cấp)).
 3. Copy vài thứ như bình thường (⌘C, chuột phải → Copy, chụp màn hình vào clipboard…).
-4. Đặt con trỏ vào chỗ muốn dán, nhấn **⌘⇧V**, click một thẻ. Xong.
+4. Đặt con trỏ vào chỗ muốn dán, nhấn **⌥⌘V**, click một thẻ. Xong.
 
 ## Phím tắt
 
 | Phím | Tác dụng |
 |---|---|
-| `⌘⇧V` | Mở / đóng bộ nhớ tạm (đổi được trong Cài đặt → Chung) |
+| `⌥⌘V` | Mở / đóng bộ nhớ tạm (đổi được trong Cài đặt → Chung) |
 | Click hoặc `↩` | Dán mục đang chọn |
 | `⌥↩` | Dán dạng plain text (bỏ định dạng chữ đậm, màu, cỡ chữ) |
 | `⌘1` … `⌘9` | Dán nhanh mục thứ 1–9 (số hiện ở góc mỗi thẻ) |
@@ -113,7 +113,7 @@ VClip cũng tự bỏ khỏi Login Items và thu hồi quyền Accessibility.
 
 | Hiện tượng | Cách xử lý |
 |---|---|
-| Nhấn ⌘⇧V không thấy gì | Kiểm tra biểu tượng VClip có trên thanh menu. App khác có thể đang dùng ⌘⇧V: đổi phím trong Cài đặt → Chung |
+| Nhấn ⌥⌘V không thấy gì | Kiểm tra biểu tượng VClip có trên thanh menu. App khác có thể đang dùng ⌥⌘V: đổi phím trong Cài đặt → Chung |
 | Chọn mục nhưng không tự dán | Cấp quyền Accessibility. Nếu đã bật mà vẫn không được: xoá VClip khỏi danh sách (−) rồi thêm lại |
 | Dán bị trượt / dán nhầm chỗ ở một số app | Cài đặt → Nâng cao → tăng **Độ trễ trước khi dán** |
 | Panel không hiện dưới con trỏ | App đó không cho biết vị trí con trỏ. Panel sẽ hiện tại chuột |

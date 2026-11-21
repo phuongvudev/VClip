@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>VClip — Bộ nhớ tạm cho macOS, giống Win + V</title>
-<meta name="description" content="VClip là trình quản lý clipboard miễn phí cho Mac. Nhấn ⌘⇧V để mở lại mọi thứ đã copy (text, link, ảnh, file) ngay dưới con trỏ và dán bằng một cú click. Nhẹ máy, không lưu mật khẩu. Thử ngay trên trang.">
+<meta name="description" content="VClip là trình quản lý clipboard miễn phí cho Mac. Nhấn ⌥⌘V để mở lại mọi thứ đã copy (text, link, ảnh, file) ngay dưới con trỏ và dán bằng một cú click. Nhẹ máy, không lưu mật khẩu. Thử ngay trên trang.">
 <meta name="keywords" content="clipboard history macOS, lịch sử clipboard Mac, Win V cho Mac, bộ nhớ tạm macOS, clipboard manager Mac, quản lý clipboard, VClip">
 <link rel="canonical" href="https://phuongvudev.github.io/VClip/">
 <meta name="robots" content="index, follow">
@@ -12,7 +12,7 @@
 <meta property="og:locale" content="vi_VN">
 <meta property="og:site_name" content="VClip">
 <meta property="og:title" content="VClip — Mọi thứ bạn đã copy, ngay dưới con trỏ">
-<meta property="og:description" content="Nhấn ⌘⇧V trên Mac để mở lại text, link, ảnh, file đã copy và dán ngay. Miễn phí.">
+<meta property="og:description" content="Nhấn ⌥⌘V trên Mac để mở lại text, link, ảnh, file đã copy và dán ngay. Miễn phí.">
 <meta property="og:url" content="https://phuongvudev.github.io/VClip/">
 <meta property="og:image" content="https://phuongvudev.github.io/VClip/images/og.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -29,7 +29,7 @@
   "@type": "SoftwareApplication",
   "name": "VClip",
   "alternateName": "Bộ nhớ tạm VClip",
-  "description": "Trình quản lý clipboard cho macOS: nhấn ⌘⇧V để mở lịch sử copy ngay dưới con trỏ, dán bằng một cú click, ghim, tìm kiếm, xem ảnh. Nhẹ máy, không lưu mật khẩu.",
+  "description": "Trình quản lý clipboard cho macOS: nhấn ⌥⌘V để mở lịch sử copy ngay dưới con trỏ, dán bằng một cú click, ghim, tìm kiếm, xem ảnh. Nhẹ máy, không lưu mật khẩu.",
   "applicationCategory": "UtilitiesApplication",
   "operatingSystem": "macOS 14 or later",
   "softwareVersion": "1.0.0",
@@ -62,7 +62,7 @@
 <style>
 /* VOICE everyday tool for Mac users and developers: friendly, exact, Vietnamese first
    IDEA the clipboard itself: a stack of clipped cards you pull back with one shortcut
-   PICTURE a working Notes window with the VClip panel open under the caret; press ⌘⇧V, click a card, it pastes
+   PICTURE a working Notes window with the VClip panel open under the caret; press ⌥⌘V, click a card, it pastes
    COLOUR white paper ground, VietIME ink #1E2A78, VClip blue→violet from the app icon, one sharp highlighter yellow
    TYPE Be Vietnam Pro 800 for titles, Be Vietnam Pro for text, JetBrains Mono for keys and code (same family as VietIME)
    LAYOUT laptop: title row with actions, then the demo window full width; phone: title, demo, buttons stacked */
@@ -196,7 +196,7 @@ footer nav{display:flex;gap:18px;flex-wrap:wrap}
   <div class="hero">
     <h1>Mọi thứ bạn đã copy, <span>ngay dưới con trỏ.</span></h1>
     <div>
-      <p class="lead">VClip là bộ nhớ tạm cho macOS, giống <kbd>Win</kbd> + <kbd>V</kbd> trên Windows. Nhấn <kbd>⌘⇧V</kbd>, chọn một thẻ, nội dung được dán ngay vào chỗ bạn đang gõ.</p>
+      <p class="lead">VClip là bộ nhớ tạm cho macOS, giống <kbd>Win</kbd> + <kbd>V</kbd> trên Windows. Nhấn <kbd>⌥⌘V</kbd>, chọn một thẻ, nội dung được dán ngay vào chỗ bạn đang gõ.</p>
       <div class="actions">
         <a class="btn solid" href="https://github.com/phuongvudev/VClip/releases/latest">Tải VClip cho Mac</a>
         <a class="btn line" href="#thu">Thử ngay trên trang</a>
@@ -225,10 +225,10 @@ footer nav{display:flex;gap:18px;flex-wrap:wrap}
         </div>
         <div class="vg" id="vg" role="listbox" aria-label="Các mục đã copy"></div>
       </div>
-      <div class="status"><span>Nhấn <b>⌘⇧V</b> (hoặc <b>Ctrl⇧V</b>) trong ô ghi chú để mở VClip</span><span>Bôi đen chữ rồi <b>⌘C</b> để thêm thẻ</span><span><b>↩</b> hoặc click để dán · <b>Esc</b> đóng</span></div>
+      <div class="status"><span>Nhấn <b>⌥⌘V</b> (hoặc <b>Ctrl⌥V</b>) trong ô ghi chú để mở VClip</span><span>Bôi đen chữ rồi <b>⌘C</b> để thêm thẻ</span><span><b>↩</b> hoặc click để dán · <b>Esc</b> đóng</span></div>
     </div>
     <div class="tries">
-      <button id="bOpen">Mở VClip (⌘⇧V)</button>
+      <button id="bOpen">Mở VClip (⌥⌘V)</button>
       <button id="bReset">Làm lại</button>
       <span>Dữ liệu trong ô thử chỉ là ví dụ, không rời khỏi trình duyệt của bạn.</span>
     </div>
@@ -245,7 +245,7 @@ footer nav{display:flex;gap:18px;flex-wrap:wrap}
     <h2 id="h-keys">Không cần chạm chuột</h2>
     <p class="intro">Mọi thao tác đều có phím tắt. Phím mở VClip đổi được trong Cài đặt.</p>
     <div class="keys">
-      <div><span><kbd>⌘⇧V</kbd></span><span>Mở / đóng bộ nhớ tạm</span></div>
+      <div><span><kbd>⌥⌘V</kbd></span><span>Mở / đóng bộ nhớ tạm</span></div>
       <div><span><kbd>↩</kbd> hoặc click</span><span>Dán mục đang chọn</span></div>
       <div><span><kbd>⌘1</kbd> … <kbd>⌘9</kbd></span><span>Dán nhanh mục 1–9</span></div>
       <div><span><kbd>⌥↩</kbd></span><span>Dán dạng plain text</span></div>
@@ -280,7 +280,7 @@ footer nav{display:flex;gap:18px;flex-wrap:wrap}
           <li>Tải file <b>VClip-&lt;phiên bản&gt;.pkg</b> ở trang <a href="https://github.com/phuongvudev/VClip/releases/latest">Releases</a>.</li>
           <li>Bấm đúp vào file, chọn <b>Continue</b> rồi <b>Install</b>. VClip tự mở, biểu tượng nằm trên thanh menu.</li>
           <li>Khi được hỏi, cấp quyền <b>Accessibility</b> để VClip tự dán và hiện ngay dưới chỗ đang gõ.</li>
-          <li>Copy vài thứ, rồi nhấn <kbd>⌘⇧V</kbd>.</li>
+          <li>Copy vài thứ, rồi nhấn <kbd>⌥⌘V</kbd>.</li>
         </ol>
       </div>
       <div class="pkg">
@@ -432,14 +432,14 @@ doc.addEventListener('copy', () => {
   if (dup) items.splice(items.indexOf(dup), 1);
   items.unshift({k: /^https?:\/\/\S+$/.test(t) ? 'link' : 'text', t, app: 'Ghi chú', ago: 'vừa xong', pin: dup?.pin});
   APPS['Ghi chú'] = '#E3A008';
-  say('VClip đã ghi lại. Nhấn ⌘⇧V để xem.');
+  say('VClip đã ghi lại. Nhấn ⌥⌘V để xem.');
   if (!vp.hidden) render();
 });
 
 document.addEventListener('keydown', e => {
   const mod = e.metaKey || e.ctrlKey;
   const inDemo = win.contains(document.activeElement);
-  if (mod && e.shiftKey && e.key.toLowerCase() === 'v' && inDemo) { e.preventDefault(); vp.hidden ? open() : close(); return; }
+  if (mod && e.altKey && e.code === 'KeyV' && inDemo) { e.preventDefault(); vp.hidden ? open() : close(); return; }
   if (vp.hidden || !inDemo) return;
   const v = visible(), cols = innerWidth <= 600 ? 2 : 3;
   const move = d => { sel = Math.max(0, Math.min(v.length - 1, sel + d)); render(); };
