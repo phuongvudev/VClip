@@ -33,7 +33,7 @@
   "description": "Trình quản lý clipboard cho macOS: nhấn ⌥⌘V để mở lịch sử copy ngay dưới con trỏ, dán bằng một cú click, ghim, tìm kiếm, xem ảnh. Nhẹ máy, không lưu mật khẩu.",
   "applicationCategory": "UtilitiesApplication",
   "operatingSystem": "macOS 14 or later",
-  "softwareVersion": "1.0.0",
+  "softwareVersion": "1.0.1",
   "inLanguage": "vi",
   "url": "https://phuongvudev.github.io/VClip/",
   "downloadUrl": "https://github.com/phuongvudev/VClip/releases/latest",
@@ -331,10 +331,10 @@ const SAMPLE = () => [
   {k:'image', img:'chart', t:'Ảnh chụp biểu đồ sprint', app:'Ảnh chụp', ago:'12 phút'},
   {k:'text', t:'Hẹn review bộ cài lúc 15:00 thứ Sáu nhé, mọi người xem trước bản .pkg giúp mình.', app:'Slack', ago:'20 phút'},
   {k:'link', t:'https://phuongvudev.github.io/VClip/', app:'Chrome', ago:'1 giờ'},
-  {k:'file', t:'VClip-1.0.0.pkg', app:'Finder', ago:'1 giờ'},
+  {k:'file', t:'VClip-1.0.1.pkg', app:'Finder', ago:'1 giờ'},
   {k:'text', t:'vu.phuong@example.com', app:'Mail', ago:'hôm qua'},
   {k:'image', img:'sunset', t:'Ảnh bìa trang chủ', app:'Figma', ago:'hôm qua'},
-  {k:'text', t:'xcrun notarytool submit build/VClip-1.0.0.pkg --keychain-profile VCLIP_NOTARY --wait', app:'Terminal', ago:'hôm qua', mono:true}
+  {k:'text', t:'xcrun notarytool submit build/VClip-1.0.1.pkg --keychain-profile VCLIP_NOTARY --wait', app:'Terminal', ago:'hôm qua', mono:true}
 ];
 let items = SAMPLE(), sel = 0, pinOnly = false, saved = null;
 
